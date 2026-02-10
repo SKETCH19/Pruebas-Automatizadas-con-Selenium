@@ -19,8 +19,18 @@ $stmt->execute();
     <div class="container">
         <header>
             <h1>📦 Gestión de Productos</h1>
-            <a href="index.php" class="btn btn-secondary">← Volver al Inicio</a>
+            <p>Administración de Inventario</p>
         </header>
+
+        <nav>
+            <ul>
+                <li><a href="index.php">Inicio</a></li>
+                <li><a href="listar.php">Gestión de Productos</a></li>
+                <li><a href="../ventas/index.php">Módulo Ventas</a></li>
+                <li><a href="../compras/index.php">Módulo Compras</a></li>
+                <li><a href="../reportes/index.php">Reportes</a></li>
+            </ul>
+        </nav>
 
         <div class="actions">
             <a href="agregar.php" class="btn btn-primary">➕ Agregar Nuevo Producto</a>

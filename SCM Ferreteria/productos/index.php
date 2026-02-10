@@ -22,9 +22,9 @@ $db = $database->getConnection();
             <ul>
                 <li><a href="index.php">Inicio</a></li>
                 <li><a href="listar.php">Gestión de Productos</a></li>
-                <li><a href="#">Módulo Ventas</a></li> 
-                <li><a href="#">Módulo Compras</a></li>
-                <li><a href="#">Reportes</a></li>
+                <li><a href="../ventas/index.php">Módulo Ventas</a></li> 
+                <li><a href="../compras/index.php">Módulo Compras</a></li>
+                <li><a href="../reportes/index.php">Reportes</a></li>
             </ul>
         </nav>
 
