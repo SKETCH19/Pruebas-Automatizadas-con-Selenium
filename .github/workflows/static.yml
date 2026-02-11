@@ -1,0 +1,46 @@
+# Workflow simple para desplegar contenido estático a GitHub Pages
+name: Deploy static content to Pages
+
+on:
+  # Se ejecuta en pushes dirigidos a la rama por defecto
+  push:
+    branches: ["main"]
+
+  # Permite ejecutar este workflow manualmente desde la pestaña Actions
+  workflow_dispatch:
+
+# Establece permisos del GITHUB_TOKEN para permitir el despliegue a GitHub Pages
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Permite solo un despliegue concurrente, omitiendo ejecuciones en cola entre la ejecución en curso y la última en cola.
+# Sin embargo, NO cancela las ejecuciones en curso ya que queremos permitir que estos despliegues de producción se completen.
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+jobs:
+  # Trabajo de despliegue único ya que solo estamos desplegando
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      
+      - name: Setup Pages
+        uses: actions/configure-pages@v4
+      
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          # Subir el directorio docs
+          path: 'docs'
+      
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
