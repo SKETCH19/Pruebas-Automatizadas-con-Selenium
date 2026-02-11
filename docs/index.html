@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="SCM Ferretería - Sistema de Gestión de Ferretería con Pruebas Automatizadas usando Selenium y Python">
+    <meta name="author" content="SKETCH19">
+    <title>SCM Ferretería - Automated Testing Portfolio</title>
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="hero">
+        <div class="container">
+            <h1>🏪 SCM Ferretería</h1>
+            <p class="subtitle">Sistema de Gestión de Ferretería con Pruebas Automatizadas</p>
+            <div class="hero-buttons">
+                <a href="https://github.com/SKETCH19/Pruebas-Automatizadas-con-Selenium" target="_blank" class="btn btn-primary">
+                    <svg width="20" height="20" viewBox="0 0 16 16" fill="currentColor">
+                        <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/>
+                    </svg>
+                    Ver en GitHub
+                </a>
+                <a href="#features" class="btn btn-secondary">Explorar Proyecto</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Tech Stack -->
+    <section class="tech-stack">
+        <div class="container">
+            <h2>💻 Stack Tecnológico</h2>
+            <div class="tech-grid">
+                <div class="tech-category">
+                    <h3>Backend</h3>
+                    <div class="badges">
+                        <span class="badge">PHP</span>
+                        <span class="badge">MySQL</span>
+                    </div>
+                </div>
+                <div class="tech-category">
+                    <h3>Frontend</h3>
+                    <div class="badges">
+                        <span class="badge">HTML5</span>
+                        <span class="badge">CSS3</span>
+                        <span class="badge">JavaScript</span>
+                    </div>
+                </div>
+                <div class="tech-category">
+                    <h3>Testing</h3>
+                    <div class="badges">
+                        <span class="badge">Python</span>
+                        <span class="badge">Selenium</span>
+                        <span class="badge">Pytest</span>
+                    </div>
+                </div>
+                <div class="tech-category">
+                    <h3>Arquitectura</h3>
+                    <div class="badges">
+                        <span class="badge">Page Object Model</span>
+                        <span class="badge">MVC</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Overview -->
+    <section id="features" class="features">
+        <div class="container">
+            <h2>📋 Descripción del Proyecto</h2>
+            <p class="section-intro">
+                Sistema completo de gestión para ferretería (Supply Chain Management) con módulos de inventario, 
+                ventas y compras, acompañado de un framework profesional de pruebas automatizadas end-to-end.
+            </p>
+            
+            <div class="feature-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">📦</div>
+                    <h3>Gestión de Productos</h3>
+                    <p>CRUD completo con validaciones, categorización, control de stock y ubicaciones</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">🛒</div>
+                    <h3>Módulo de Ventas</h3>
+                    <p>Gestión de clientes y procesamiento de órdenes de venta</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">📥</div>
+                    <h3>Módulo de Compras</h3>
+                    <p>Administración de proveedores y registro de compras</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">📊</div>
+                    <h3>Reportes y Analytics</h3>
+                    <p>Generación de reportes de inventario y estadísticas</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testing Suite -->
+    <section class="testing-section">
+        <div class="container">
+            <h2>🧪 Suite de Pruebas Automatizadas</h2>
+            <p class="section-intro">
+                Framework profesional de testing con más de 60 casos de prueba automatizados
+            </p>
+            
+            <div class="testing-features">
+                <div class="testing-card">
+                    <h3>🏗️ Page Object Model (POM)</h3>
+                    <p>Arquitectura escalable y mantenible con separación de responsabilidades</p>
+                    <ul>
+                        <li>base_page.py - Clase base con funcionalidades comunes</li>
+                        <li>product_list_page.py - Lista de productos</li>
+                        <li>add_product_page.py - Agregar productos</li>
+                        <li>edit_product_page.py - Editar productos</li>
+                    </ul>
+                </div>
+                
+                <div class="testing-card">
+                    <h3>✅ Cobertura de Tests</h3>
+                    <p>Tests exhaustivos para todas las operaciones críticas</p>
+                    <ul>
+                        <li>✓ Operaciones CRUD completas</li>
+                        <li>✓ Validación de campos requeridos</li>
+                        <li>✓ Casos positivos y negativos</li>
+                        <li>✓ Manejo de errores y alertas</li>
+                        <li>✓ Flujos de navegación</li>
+                    </ul>
+                </div>
+                
+                <div class="testing-card">
+                    <h3>🛠️ Utilidades y Helpers</h3>
+                    <p>Conjunto robusto de herramientas auxiliares</p>
+                    <ul>
+                        <li>📸 Screenshots automáticos</li>
+                        <li>🔄 Generación de datos de prueba</li>
+                        <li>⏱️ Esperas inteligentes</li>
+                        <li>🔁 Reintentos automáticos</li>
+                        <li>📝 Logging detallado</li>
+                    </ul>
+                </div>
+                
+                <div class="testing-card">
+                    <h3>📊 Reportes HTML</h3>
+                    <p>Documentación detallada de resultados de pruebas</p>
+                    <ul>
+                        <li>Reportes con timestamps</li>
+                        <li>Capturas de pantalla integradas</li>
+                        <li>Estadísticas de éxito/fallo</li>
+                        <li>Trazabilidad completa</li>
+                    </ul>
+                    <a href="reports/" class="btn-link">Ver Reportes de Pruebas →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Code Features -->
+    <section class="code-features">
+        <div class="container">
+            <h2>⚙️ Características Técnicas</h2>
+            
+            <div class="features-list">
+                <div class="feature-item">
+                    <span class="check">✓</span>
+                    <div>
+                        <strong>Arquitectura Limpia:</strong> Separación clara entre lógica de negocio, presentación y pruebas
+                    </div>
+                </div>
+                
+                <div class="feature-item">
+                    <span class="check">✓</span>
+                    <div>
+                        <strong>Código Documentado:</strong> Docstrings y comentarios explicativos en español
+                    </div>
+                </div>
+                
+                <div class="feature-item">
+                    <span class="check">✓</span>
+                    <div>
+                        <strong>Manejo de Errores:</strong> Try-catch blocks y validaciones robustas
+                    </div>
+                </div>
+                
+                <div class="feature-item">
+                    <span class="check">✓</span>
+                    <div>
+                        <strong>Tests Reutilizables:</strong> Funciones helper y fixtures para generación de datos
+                    </div>
+                </div>
+                
+                <div class="feature-item">
+                    <span class="check">✓</span>
+                    <div>
+                        <strong>Responsive Design:</strong> Interfaz adaptable a diferentes dispositivos
+                    </div>
+                </div>
+                
+                <div class="feature-item">
+                    <span class="check">✓</span>
+                    <div>
+                        <strong>Base de Datos:</strong> Scripts SQL para setup inicial con datos de ejemplo
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Structure -->
+    <section class="structure-section">
+        <div class="container">
+            <h2>📁 Estructura del Proyecto</h2>
+            <div class="structure-container">
+                <pre><code>SCM Ferreteria/
+├── 📂 productos/          # Módulo de gestión de productos
+│   ├── index.php         # Dashboard principal
+│   ├── listar.php        # Lista de productos
+│   ├── agregar.php       # Formulario agregar
+│   ├── editar.php        # Formulario editar
+│   └── eliminar.php      # Eliminar producto
+│
+├── 📂 selenium_tests/     # Framework de pruebas
+│   ├── 📂 pages/         # Page Objects
+│   ├── 📂 tests/         # Test suites
+│   ├── 📂 utils/         # Utilidades
+│   ├── 📂 reports/       # Reportes HTML
+│   └── 📂 screenshots/   # Capturas
+│
+├── 📂 ventas/            # Módulo de ventas
+├── 📂 compras/           # Módulo de compras
+├── 📂 reportes/          # Módulo de reportes
+├── 📂 database/          # Conexión BD
+├── 📂 css/               # Estilos
+├── 📂 js/                # Scripts
+└── 📂 sql/               # Scripts SQL</code></pre>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats -->
+    <section class="stats-section">
+        <div class="container">
+            <h2>📈 Estadísticas del Proyecto</h2>
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-number">60+</div>
+                    <div class="stat-label">Tests Automatizados</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">4</div>
+                    <div class="stat-label">Módulos Principales</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">100%</div>
+                    <div class="stat-label">Cobertura CRUD</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">8+</div>
+                    <div class="stat-label">Tecnologías Integradas</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="cta-section">
+        <div class="container">
+            <h2>🚀 Explora el Código</h2>
+            <p>Revisa el código fuente completo, documentación y ejemplos de implementación</p>
+            <div class="cta-buttons">
+                <a href="https://github.com/SKETCH19/Pruebas-Automatizadas-con-Selenium" target="_blank" class="btn btn-primary btn-large">
+                    Ver Repositorio Completo
+                </a>
+                <a href="https://github.com/SKETCH19/Pruebas-Automatizadas-con-Selenium/blob/main/README.md" target="_blank" class="btn btn-secondary btn-large">
+                    Leer Documentación
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>Desarrollado por <a href="https://github.com/SKETCH19" target="_blank">SKETCH19</a></p>
+            <p class="footer-note">
+                Proyecto Portfolio - Sistema de Gestión con Pruebas Automatizadas
+            </p>
+            <div class="footer-links">
+                <a href="https://github.com/SKETCH19/Pruebas-Automatizadas-con-Selenium/issues" target="_blank">Issues</a>
+                <span>•</span>
+                <a href="https://github.com/SKETCH19/Pruebas-Automatizadas-con-Selenium/pulls" target="_blank">Pull Requests</a>
+                <span>•</span>
+                <a href="reports/" target="_blank">Test Reports</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

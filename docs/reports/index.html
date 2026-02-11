@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Reports - SCM Ferretería</title>
+    <link rel="stylesheet" href="../assets/style.css">
+    <style>
+        .reports-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        
+        .reports-header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        
+        .reports-header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+            background: var(--accent-gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .reports-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 25px;
+            margin-top: 40px;
+        }
+        
+        .report-card {
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 25px;
+            transition: all 0.3s ease;
+        }
+        
+        .report-card:hover {
+            transform: translateY(-5px);
+            border-color: var(--primary-color);
+            box-shadow: 0 10px 30px rgba(37, 99, 235, 0.2);
+        }
+        
+        .report-type {
+            display: inline-block;
+            padding: 5px 12px;
+            border-radius: 15px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            margin-bottom: 15px;
+        }
+        
+        .report-type.final {
+            background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+            color: white;
+        }
+        
+        .report-type.simple {
+            background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%);
+            color: white;
+        }
+        
+        .report-type.html {
+            background: linear-gradient(135deg, #8b5cf6 0%, #7c3aed 100%);
+            color: white;
+        }
+        
+        .report-title {
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+            color: var(--text-primary);
+        }
+        
+        .report-date {
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+            margin-bottom: 20px;
+        }
+        
+        .report-link {
+            display: inline-block;
+            padding: 10px 20px;
+            background: var(--primary-color);
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+        
+        .report-link:hover {
+            background: var(--secondary-color);
+            transform: translateX(5px);
+        }
+        
+        .back-link {
+            display: inline-block;
+            margin-bottom: 30px;
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: 600;
+        }
+        
+        .back-link:hover {
+            color: var(--secondary-color);
+        }
+        
+        .no-reports {
+            text-align: center;
+            padding: 60px 20px;
+            color: var(--text-secondary);
+        }
+        
+        .section-divider {
+            margin: 50px 0 30px;
+            padding-bottom: 15px;
+            border-bottom: 2px solid var(--border-color);
+        }
+        
+        .section-divider h2 {
+            font-size: 1.8rem;
+            color: var(--text-primary);
+        }
+    </style>
+</head>
+<body>
+    <div class="reports-container">
+        <a href="../index.html" class="back-link">← Volver al Portfolio</a>
+        
+        <div class="reports-header">
+            <h1>📊 Reportes de Pruebas Automatizadas</h1>
+            <p style="color: var(--text-secondary); font-size: 1.1rem;">
+                Resultados detallados de las ejecuciones de testing con Selenium
+            </p>
+        </div>
+
+        <!-- Test Final Reports -->
+        <div class="section-divider">
+            <h2>🎯 Pruebas Finales Completas</h2>
+        </div>
+        <div class="reports-grid">
+            <div class="report-card">
+                <span class="report-type final">Test Final</span>
+                <div class="report-title">Suite Completa #1</div>
+                <div class="report-date">📅 1 de Diciembre, 2024 - 16:03:55</div>
+                <a href="test_final_20251201_160355.html" class="report-link" target="_blank">Ver Reporte →</a>
+            </div>
+            
+            <div class="report-card">
+                <span class="report-type final">Test Final</span>
+                <div class="report-title">Suite Completa #2</div>
+                <div class="report-date">📅 1 de Diciembre, 2024 - 16:19:52</div>
+                <a href="test_final_20251201_161952.html" class="report-link" target="_blank">Ver Reporte →</a>
+            </div>
+        </div>
+
+        <!-- Simple Tests Reports -->
+        <div class="section-divider">
+            <h2>✅ Pruebas Simples</h2>
+        </div>
+        <div class="reports-grid">
+            <div class="report-card">
+                <span class="report-type simple">Test Simple</span>
+                <div class="report-title">Validación Básica #1</div>
+                <div class="report-date">📅 1 de Diciembre, 2024 - 15:52:56</div>
+                <a href="test_simple_20251201_155256.html" class="report-link" target="_blank">Ver Reporte →</a>
+            </div>
+            
+            <div class="report-card">
+                <span class="report-type simple">Test Simple</span>
+                <div class="report-title">Validación Básica #2</div>
+                <div class="report-date">📅 1 de Diciembre, 2024 - 15:58:11</div>
+                <a href="test_simple_20251201_155811.html" class="report-link" target="_blank">Ver Reporte →</a>
+            </div>
+            
+            <div class="report-card">
+                <span class="report-type simple">Test Simple</span>
+                <div class="report-title">Validación Básica #3</div>
+                <div class="report-date">📅 1 de Diciembre, 2024 - 15:59:02</div>
+                <a href="test_simple_20251201_155902.html" class="report-link" target="_blank">Ver Reporte →</a>
+            </div>
+            
+            <div class="report-card">
+                <span class="report-type simple">Test Simple</span>
+                <div class="report-title">Validación Básica #4</div>
+                <div class="report-date">📅 1 de Diciembre, 2024 - 16:20:33</div>
+                <a href="test_simple_20251201_162033.html" class="report-link" target="_blank">Ver Reporte →</a>
+            </div>
+            
+            <div class="report-card">
+                <span class="report-type simple">Test Simple</span>
+                <div class="report-title">Validación Básica #5</div>
+                <div class="report-date">📅 1 de Diciembre, 2024 - 16:21:31</div>
+                <a href="test_simple_20251201_162131.html" class="report-link" target="_blank">Ver Reporte →</a>
+            </div>
+        </div>
+
+        <!-- HTML Reports -->
+        <div class="section-divider">
+            <h2>📋 Reportes HTML Detallados</h2>
+        </div>
+        <div class="reports-grid">
+            <div class="report-card">
+                <span class="report-type html">HTML Report</span>
+                <div class="report-title">Ejecución Completa #1</div>
+                <div class="report-date">📅 30 de Noviembre, 2024 - 12:59:53</div>
+                <a href="html_reports/test_report_20251130_125953.html" class="report-link" target="_blank">Ver Reporte →</a>
+            </div>
+            
+            <div class="report-card">
+                <span class="report-type html">HTML Report</span>
+                <div class="report-title">Ejecución Completa #2</div>
+                <div class="report-date">📅 1 de Diciembre, 2024 - 15:27:50</div>
+                <a href="html_reports/test_report_20251201_152750.html" class="report-link" target="_blank">Ver Reporte →</a>
+            </div>
+            
+            <div class="report-card">
+                <span class="report-type html">HTML Report</span>
+                <div class="report-title">Ejecución Completa #3</div>
+                <div class="report-date">📅 1 de Diciembre, 2024 - 15:39:40</div>
+                <a href="html_reports/test_report_20251201_153940.html" class="report-link" target="_blank">Ver Reporte →</a>
+            </div>
+            
+            <div class="report-card">
+                <span class="report-type html">HTML Report</span>
+                <div class="report-title">Ejecución Completa #4</div>
+                <div class="report-date">📅 1 de Diciembre, 2024 - 16:22:31</div>
+                <a href="html_reports/test_report_20251201_162231.html" class="report-link" target="_blank">Ver Reporte →</a>
+            </div>
+            
+            <div class="report-card">
+                <span class="report-type html">HTML Report</span>
+                <div class="report-title">Ejecución Completa #5</div>
+                <div class="report-date">📅 1 de Diciembre, 2024 - 16:37:18</div>
+                <a href="html_reports/test_report_20251201_163718.html" class="report-link" target="_blank">Ver Reporte →</a>
+            </div>
+        </div>
+
+        <div style="text-align: center; margin-top: 60px; padding: 40px; background: var(--card-bg); border-radius: 12px;">
+            <h3 style="margin-bottom: 15px;">💡 Sobre los Reportes</h3>
+            <p style="color: var(--text-secondary); max-width: 700px; margin: 0 auto;">
+                Estos reportes muestran los resultados de las pruebas automatizadas ejecutadas con Pytest y Selenium.
+                Cada reporte incluye detalles de los tests ejecutados, capturas de pantalla, y estadísticas de éxito/fallo.
+            </p>
+        </div>
+    </div>
+
+    <footer style="margin-top: 80px;">
+        <div class="container">
+            <p>Desarrollado por <a href="https://github.com/SKETCH19" target="_blank">SKETCH19</a></p>
+            <p class="footer-note">
+                Sistema de Gestión con Pruebas Automatizadas
+            </p>
+        </div>
+    </footer>
+</body>
+</html>
